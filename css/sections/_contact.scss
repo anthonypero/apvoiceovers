@@ -1,0 +1,202 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Contact Section */
+
+.section--header__contact {
+
+  background: url('../images/backgrounds/mic-grill-portrait.jpg') center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  @include respond(tPortrait) {
+    background: url('../images/backgrounds/mic-grill.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  @include respond(hdDesktop) {
+    background: url('../images/backgrounds/mic-grill.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.section--body__contact {
+  background-color: $off_black;
+
+  .lead {
+    color: $white;
+  }
+}
+
+.contact--other {
+  margin-top: $gutter_width;
+
+  @include respond(sdDesktop) {
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+  }
+
+  &__inner {
+    border: 1px solid $white;
+    color: $white;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__title {
+    margin:0;
+    text-transform: uppercase;
+    padding: $gutter_width;
+    border-bottom: 1px solid;
+
+    font-size: 2.2rem;
+
+    @include respond(hdDesktop) {
+      font-size: 3rem;
+    }
+    // background-color: rgba($off_white, .9);
+    // color: $off_black;
+  }
+
+  &__item {
+    border-bottom: 1px solid $white;
+    position: relative;
+
+    &__link {
+    display: block;
+
+    font-size: 2rem;
+
+    @include respond(hdDesktop) {
+      font-size: 2.5rem;
+    }
+
+    padding: $gutter_width;
+    color: $white;
+    font-weight: 300;
+
+      &:hover {
+        border: none;
+        color: $white;
+        font-weight: bold;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+
+      left: 3rem;
+      top: 2.1rem;
+
+      @include respond(hdDesktop) {
+        left: 4rem;
+        top: 2rem;
+      }
+
+      display: block;
+
+      font-size: 3rem;
+
+      @include respond(hdDesktop) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__twitter {
+    &__link {
+      &:hover {
+        background-color: $twitter_blue;
+      }
+    }
+  }
+
+  &__linkedin {
+    border-bottom: none;
+
+    &__link {
+      &:hover {
+        background-color: $linkedin_blue;
+      }
+    }
+  }
+
+  &__phone {
+    &__link {
+      &:hover {
+        background-color: $highlight;
+      }
+    }
+  }
+}
+
+.contact--form {
+
+  &__input {
+    border: none;
+    background: rgba($off_white, .9);
+    padding: ($gutter_width / 2) $gutter_width;
+    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    color: $black;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      background: $white;
+      color: #000;
+      border-left: .5rem solid green;
+      padding-left: ($gutter-width - .5rem);
+    }
+
+    &:focus:invalid {
+      border-color: red;
+    }
+  }
+
+  &__textarea {
+    border: none;
+    background: rgba($off_white, .9);
+    padding: ($gutter_width / 2) $gutter_width;
+    font-size: 2rem;
+    font-family: Lato, sans-serif;
+    color: $black;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      background: $white !important;
+      color: #000;
+      border-left: .5rem solid green;
+      padding-left: ($gutter-width - .5rem);
+    }
+
+    &:focus:invalid {
+      border-color: red;
+    }
+  }
+
+  &__submit {
+    border: 1px solid $white;
+    background: none;
+    color: $white;
+    font-family: lato, sans-serif;
+    text-transform: uppercase;
+    padding: ($gutter_width / 2) $gutter_width;
+    width: 100%;
+    font-size: 2rem;
+    transition: background-color .3s, text-shadow .3s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: rgba($white, .3);
+      text-shadow: 0px 0px 4px $off_black;
+    }
+  }
+}

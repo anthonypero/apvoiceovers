@@ -1,0 +1,50 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float: right;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.column-3 {
+  @include respond(sdDesktop) {
+    column-count: 2;
+    column-gap: ($gutter_width * 2);
+  }
+}
+
+.disclaimer {
+  font-size: 2rem;
+  vertical-align: top;
+}
+
+.mouse {
+  font-size: 1rem;
+  margin: 0 $gutter_width;
+}
+
+.relative {
+  position: relative;
+}

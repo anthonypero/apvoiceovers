@@ -1,0 +1,61 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Demos Section */
+
+.demo {
+
+  &--title {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $off_black;
+    padding: 1rem 0 0;
+  }
+
+  &--player {
+    margin-top: ($gutter_width / 2);
+    border-radius: .7rem;
+    border: 1px solid rgba($off_black, .2);
+    overflow: hidden;
+
+    .plyr__control--overlaid {
+      background: rgba($highlight, .8);
+
+      &:hover {
+        background: rgba($highlight, 1);
+      }
+    }
+
+    .plyr--full-ui input[type=range] {
+      color: $highlight;
+    }
+
+    .plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=true],
+    .plyr--video .plyr__controls .plyr__control.plyr__tab-focus, .plyr--video .plyr__controls .plyr__control:hover, .plyr--video .plyr__controls .plyr__control[aria-expanded=true] {
+      background: $highlight;
+    }
+  }
+
+  &--download a {
+    background: url('../images/download-cloud.png') top left no-repeat;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-size: contain;
+    display: block;
+    overflow: hidden;
+    color: rgba(0,0,0,0);
+    transition: opacity .2s;
+
+    &:hover {
+      border-bottom: none;
+      opacity: .5;
+    }
+  }
+}
+
+.navbar-adjustment {
+  display: block;
+  position: relative;
+  top: -13rem;
+}

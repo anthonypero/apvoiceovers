@@ -1,0 +1,81 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Identity Section */
+
+.section--header__main {
+
+
+  margin: 0;
+  background: $black url('../images/backgrounds/headphones-small.jpg') 59% 0% no-repeat;
+  background-attachment: fixed;
+
+  @include respond(tLandscape) {
+    background: $black url('../images/backgrounds/headphones-small.jpg') 55% 0% no-repeat;
+    background-attachment: fixed;
+  }
+
+  @include respond(sdDesktop) {
+    background: $black url('../images/backgrounds/headphones-small.jpg') 100% 0% no-repeat;
+    background-attachment: fixed;
+  }
+
+  @include respond(hdDesktop) {
+    background: $black url('../images/backgrounds/headphones.jpg') top center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+
+  height: 100vh;
+
+  @include respond(tPortrait) {
+    height: 65rem;
+  }
+
+  @include respond(tLandscape) {
+    height: 70rem;
+  }
+
+  @include respond(sdDesktop) {
+    height: 85rem;
+  }
+
+  @include respond(hdDesktop) {
+    height: 105rem;
+  }
+
+
+  .section--header__icon {
+    text-align: center;
+    width: 100%;
+
+    height: 18rem;
+    margin-bottom: 1.5rem;
+
+    @include respond(tLandscape) {
+      height: 18rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @include respond(hdDesktop) {
+      height: 29rem;
+      margin-bottom: 4rem;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+  }
+
+  .section--header__wrapper {
+    transform: translate(-50%, -40%);
+
+    @include respond(hdDesktop) {
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}

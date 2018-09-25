@@ -1,0 +1,79 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Services Section */
+
+.section--header__services {
+
+  background: url('../images/backgrounds/speaker-portrait.jpg') center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  @include respond(tPortrait) {
+    background: url('../images/backgrounds/speaker-small.jpg') 75% 50% no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  @include respond(tLandscape) {
+    background: url('../images/backgrounds/speaker.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.card {
+  background: $white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 5px 5px rgba($off_black, .3);
+  font-size: 2rem;
+  line-height: 3rem;
+
+  &--title {
+    margin: 0;
+    height: 22rem;
+    padding-top: 11rem;
+    text-align: center;
+    position: relative;
+    background-color: $off_black;
+
+    &__narration {
+      background: url('../images/backgrounds/bookshelf.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    &__voiceovers {
+      background: url('../images/backgrounds/mic2.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    &__studio {
+      background: url('../images/backgrounds/mixer.jpg') center center no-repeat;
+      background-size: cover;
+    }
+
+    &__inner {
+      background-color: rgba( $white, .6);
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 3rem;
+      padding: 2.7rem 1rem;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--description {
+    padding: $gutter_width $gutter_width 0;
+  }
+
+  &--list {
+    padding: 0 ($gutter_width * 2) $gutter_width;
+    list-style-position: outside;
+
+    &__item {
+      line-height: 2.5rem;
+
+    }
+
+  }
+}

@@ -1,0 +1,75 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* About Section */
+
+.section--header__about {
+
+  background: url('../images/backgrounds/techbooth-portrait.jpg') center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  @include respond(tPortrait) {
+    background: url('../images/backgrounds/techbooth-small.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  @include respond(hdDesktop) {
+    background: url('../images/backgrounds/techbooth-small.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.section--body__about {
+  p {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 3.5rem;
+
+
+    & + p {
+      margin-top: 3rem;
+    }
+  }
+
+  .column-3 {
+    border: 1px solid;
+    padding: ($gutter_width * 2)
+  }
+
+  .img-wrapper {
+
+    border: 1px solid;
+    padding: ($gutter_width);
+    background-color: rgba($white, 0);
+    transition: background-color .3s;
+
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include respond(sdDesktop) {
+      max-width: none;
+      margin: inherit;
+    }
+
+    &:hover {
+      background-color: rgba($white, 1);
+    }
+
+
+    img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(1);
+      transition: filter .3s;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+
+  }
+}

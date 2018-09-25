@@ -1,0 +1,120 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Clients Section */
+
+.section--header__clients {
+
+  background: url('../images/backgrounds/mic1-portrait.jpg') center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  @include respond(tPortrait) {
+    background: url('../images/backgrounds/mic1-small.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  @include respond(hdDesktop) {
+    background: url('../images/backgrounds/mic1.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.section--body__clients {
+  background: $black;
+
+  .lead {
+    color: $off_white;
+  }
+
+  .lightSlider {
+    height: 243px;
+  }
+
+  .row-container {
+    position: relative;
+  }
+
+  .row-overlay-1 {
+    background: linear-gradient(to right, $black, rgba($white, 0));
+    height: 243px;
+    width: ((100% / 8) / 3);
+    position:absolute;
+    left: 0;
+    z-index: 50;
+  }
+
+  .row-overlay-2 {
+    background: linear-gradient(to left, $black, rgba($white, 0));
+    height: 243px;
+    width: ((100% / 8) / 3);
+    position:absolute;
+    right: 0;
+    z-index: 50;
+  }
+
+  .row .slider-card {
+    z-index: 49;
+  }
+
+
+  .slider-card  {
+
+    h4 {
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .5;
+    transition: opacity .3s;
+    width: 150px;
+    height: 150px;
+
+    @include respond(tPortrait) {
+      width: 200px;
+      height: 200px;
+    }
+
+    color: rgba($black, 0);
+
+
+      &:hover {
+        opacity: 1;
+      }
+
+    }
+
+    &--dirtdevil h4 {
+      background-image: url('../images/clients/dd-white.png');
+    }
+
+    &--thechapel h4 {
+      background-image: url('../images/clients/chapel-white.png');
+    }
+
+    &--shawnee-alliance h4 {
+      background-image: url('../images/clients/shawnee-alliance-white.png');
+    }
+
+    &--gfo h4 {
+      background-image: url('../images/clients/gfo-white.png');
+    }
+
+    &--hoover h4 {
+      background-image: url('../images/clients/hoover-white.png');
+    }
+
+    &--oreck h4 {
+      background-image: url('../images/clients/oreck-white.png');
+    }
+
+    &--tsc h4 {
+      background-image: url('../images/clients/tsc-white.png');
+    }
+
+    &--wtlw h4 {
+      background-image: url('../images/clients/wtlw-white.png');
+    }
+  }
+}

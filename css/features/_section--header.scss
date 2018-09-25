@@ -1,0 +1,97 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Section Header Feature */
+
+.section--header {
+
+  // background-color: $black;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  min-height: 25rem;
+
+  @include respond(tPortrait) {
+    min-height: 50rem;
+  }
+
+  @include respond(hdDesktop) {
+    min-height: 68.5rem;
+  }
+
+  &__wrapper {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -40%);
+
+    @include respond(hdDesktop) {
+      transform: translate(-50%, -50%);
+    }
+
+    text-align: center;
+    max-width: 96vw;
+  }
+
+  &__title {
+    color: $off_white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 7.8rem;
+    padding-bottom: 1.5rem;
+
+    font-size: 5.8rem;
+    padding-bottom: 1.5rem;
+
+    @include respond(sdLandscape) {
+      font-size: 7.8rem;
+      padding-bottom: 1.5rem;
+    }
+
+    @include respond(hdDesktop) {
+      font-size: 8.8rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    color: $off_white;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    position: relative;
+    top: -1rem;
+
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+    @include respond(sdDesktop) {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+    }
+
+    @include respond(hdDesktop) {
+      font-size: 3.1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__audioform {
+
+    width: 50.5rem;
+
+    @include respond(sdDesktop) {
+      width: 67.5rem;
+    }
+
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,1119 @@
+/* Autosave */
+/* Import Base Styles */
+@import url(external/lightslider.css);
+@import url(external/plyr.css);
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Sitewide REset */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Sitewide Fonts */
+body {
+  font-family: 'Lato', 'Arial', 'Verdana', sans-serif; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Sitewide Variables */
+/* Colors */
+/* Grid */
+/* Media Query Manager */
+/* --- Breakpoints ------------
+
+    phone:        000  -  499;
+      grid_width = 100%;
+
+    tPortrait:    500  -  799;
+      grid_width = 500px
+
+    tLandscape:   800  -  1199;
+      grid_width = 720px
+
+    sdDesktop:    1200 -  1599;
+      grid_width = 960px
+
+    hdDesktop:    1600 -  1999;
+      grid_width = 1440px
+
+    xlDesktop:    2000+
+
+------------------------------- */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear-left {
+  clear: left; }
+
+.clear-right {
+  clear: right; }
+
+.clear-both {
+  clear: both; }
+
+.fixed {
+  position: fixed !important; }
+
+@media (min-width: 75em) {
+  .column-3 {
+    column-count: 2;
+    column-gap: 5rem; } }
+
+.disclaimer {
+  font-size: 2rem;
+  vertical-align: top; }
+
+.mouse {
+  font-size: 1rem;
+  margin: 0 2.5rem; }
+
+.relative {
+  position: relative; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Sitewide Grid */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 31.25em) {
+    .container {
+      width: 500px; } }
+  @media (min-width: 50em) {
+    .container {
+      width: 720px; } }
+  @media (min-width: 75em) {
+    .container {
+      width: 960px; } }
+  @media (min-width: 100em) {
+    .container {
+      width: 1440px; } }
+  @media (min-width: 125em) {
+    .container {
+      width: 1600px; } }
+
+.row {
+  clear: both; }
+
+.col {
+  padding: 2.5rem;
+  width: 100%; }
+
+@media (min-width: 75em) {
+  .col-1-of-3 {
+    width: 33.33333%; } }
+
+@media (min-width: 75em) {
+  .col-2-of-3 {
+    width: 66.66667%; } }
+
+@media (min-width: 75em) {
+  .col-1-of-2 {
+    width: 50%; } }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Sitewide Typography */
+html {
+  font-size: 50%; }
+  @media (min-width: 125em) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  font-size: 1.6rem;
+  background-color: #e6e6e6; }
+
+a {
+  color: #e87a37;
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    border-bottom: 2px solid;
+    color: #252525; }
+
+/* Import external library css */
+/* Import Features */
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Section Header Feature */
+.section--header {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 25rem; }
+  @media (min-width: 31.25em) {
+    .section--header {
+      min-height: 50rem; } }
+  @media (min-width: 100em) {
+    .section--header {
+      min-height: 68.5rem; } }
+  .section--header__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    max-width: 96vw; }
+    @media (min-width: 100em) {
+      .section--header__wrapper {
+        transform: translate(-50%, -50%); } }
+  .section--header__title {
+    color: #e6e6e6;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 7.8rem;
+    padding-bottom: 1.5rem;
+    font-size: 5.8rem;
+    padding-bottom: 1.5rem; }
+    @media (min-width: 100em) {
+      .section--header__title {
+        font-size: 8.8rem;
+        padding-bottom: 1.5rem; } }
+  .section--header__subtitle {
+    color: #e6e6e6;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    position: relative;
+    top: -1rem;
+    font-size: 2rem;
+    padding-bottom: 1rem; }
+    @media (min-width: 75em) {
+      .section--header__subtitle {
+        font-size: 2.5rem;
+        padding-bottom: 1rem; } }
+    @media (min-width: 100em) {
+      .section--header__subtitle {
+        font-size: 3.1rem;
+        padding-bottom: 1rem; } }
+  .section--header__audioform {
+    width: 50.5rem;
+    max-width: 100%; }
+    @media (min-width: 75em) {
+      .section--header__audioform {
+        width: 67.5rem; } }
+    .section--header__audioform img {
+      max-width: 100%;
+      max-height: 100%; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Section Body Feature */
+.section--body {
+  background-color: #e6e6e6;
+  padding: 5rem 0; }
+  @media (min-width: 50em) {
+    .section--body {
+      padding: 10rem 0; } }
+
+.lead {
+  margin: 0 2.5rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #252525;
+  border: 1px solid;
+  text-align: center;
+  padding: 2.5rem 5rem;
+  font-size: 4rem; }
+  @media (min-width: 100em) {
+    .lead {
+      font-size: 5rem; } }
+  .lead strong {
+    font-weight: 900; }
+
+.description {
+  margin: 2.5rem;
+  padding: 2.5rem 0 5rem;
+  font-size: 2.5rem;
+  border-bottom: 1px solid;
+  text-align: center;
+  color: #252525;
+  line-height: 4rem; }
+
+/* Import Section Styles */
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Identity Section */
+.section--header__main {
+  margin: 0;
+  background: #0b0b0b url("../images/backgrounds/headphones-small.jpg") 59% 0% no-repeat;
+  background-attachment: fixed;
+  height: 100vh; }
+  @media (min-width: 50em) {
+    .section--header__main {
+      background: #0b0b0b url("../images/backgrounds/headphones-small.jpg") 55% 0% no-repeat;
+      background-attachment: fixed; } }
+  @media (min-width: 75em) {
+    .section--header__main {
+      background: #0b0b0b url("../images/backgrounds/headphones-small.jpg") 100% 0% no-repeat;
+      background-attachment: fixed; } }
+  @media (min-width: 100em) {
+    .section--header__main {
+      background: #0b0b0b url("../images/backgrounds/headphones.jpg") top center no-repeat;
+      background-size: cover;
+      background-attachment: fixed; } }
+  @media (min-width: 31.25em) {
+    .section--header__main {
+      height: 65rem; } }
+  @media (min-width: 50em) {
+    .section--header__main {
+      height: 70rem; } }
+  @media (min-width: 75em) {
+    .section--header__main {
+      height: 85rem; } }
+  @media (min-width: 100em) {
+    .section--header__main {
+      height: 105rem; } }
+  .section--header__main .section--header__icon {
+    text-align: center;
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 1.5rem; }
+    @media (min-width: 50em) {
+      .section--header__main .section--header__icon {
+        height: 18rem;
+        margin-bottom: 1.5rem; } }
+    @media (min-width: 100em) {
+      .section--header__main .section--header__icon {
+        height: 29rem;
+        margin-bottom: 4rem; } }
+    .section--header__main .section--header__icon img {
+      max-width: 100%;
+      max-height: 100%; }
+  .section--header__main .section--header__wrapper {
+    transform: translate(-50%, -40%); }
+    @media (min-width: 100em) {
+      .section--header__main .section--header__wrapper {
+        transform: translate(-50%, -50%); } }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Header Section */
+.site-header {
+  height: 13rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  width: 100%;
+  transition: background .5s, display .5s; }
+  .site-header .mini-identity {
+    padding-left: 7.5rem;
+    background: url("../images/logo-black-small.png") top left no-repeat;
+    background-size: contain;
+    height: 9rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #252525; }
+    .site-header .mini-identity .title {
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      padding-top: 1.8rem;
+      text-align: center;
+      line-height: 3rem; }
+    .site-header .mini-identity .subtitle {
+      text-align: center;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: .5rem;
+      padding-top: 1.3rem;
+      line-height: 1rem; }
+  .site-header .main-navigation {
+    padding-top: 5.6rem; }
+    .site-header .main-navigation .menu {
+      list-style-position: outside;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .site-header .main-navigation .menu--item {
+        display: inline-block;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        padding-left: 6rem; }
+        .site-header .main-navigation .menu--item__link {
+          color: #252525;
+          text-decoration: none;
+          letter-spacing: .2rem; }
+          .site-header .main-navigation .menu--item__link:hover {
+            border-bottom: 2px solid; }
+
+.navbar-hidden {
+  background-color: transparent; }
+  .navbar-hidden .site-link {
+    display: none; }
+  .navbar-hidden .main-navigation .menu--item__link {
+    color: #e6e6e6; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Demos Section */
+.demo--title {
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #252525;
+  padding: 1rem 0 0; }
+
+.demo--player {
+  margin-top: 1.25rem;
+  border-radius: .7rem;
+  border: 1px solid rgba(37, 37, 37, 0.2);
+  overflow: hidden; }
+  .demo--player .plyr__control--overlaid {
+    background: rgba(232, 122, 55, 0.8); }
+    .demo--player .plyr__control--overlaid:hover {
+      background: #e87a37; }
+  .demo--player .plyr--full-ui input[type=range] {
+    color: #e87a37; }
+  .demo--player .plyr--audio .plyr__control.plyr__tab-focus, .demo--player .plyr--audio .plyr__control:hover, .demo--player .plyr--audio .plyr__control[aria-expanded=true],
+  .demo--player .plyr--video .plyr__controls .plyr__control.plyr__tab-focus, .demo--player .plyr--video .plyr__controls .plyr__control:hover, .demo--player .plyr--video .plyr__controls .plyr__control[aria-expanded=true] {
+    background: #e87a37; }
+
+.demo--download a {
+  background: url("../images/download-cloud.png") top left no-repeat;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-size: contain;
+  display: block;
+  overflow: hidden;
+  color: transparent;
+  transition: opacity .2s; }
+  .demo--download a:hover {
+    border-bottom: none;
+    opacity: .5; }
+
+.navbar-adjustment {
+  display: block;
+  position: relative;
+  top: -13rem; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Clients Section */
+.section--header__clients {
+  background: url("../images/backgrounds/mic1-portrait.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  @media (min-width: 31.25em) {
+    .section--header__clients {
+      background: url("../images/backgrounds/mic1-small.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+  @media (min-width: 100em) {
+    .section--header__clients {
+      background: url("../images/backgrounds/mic1.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+
+.section--body__clients {
+  background: #0b0b0b; }
+  .section--body__clients .lead {
+    color: #e6e6e6; }
+  .section--body__clients .lightSlider {
+    height: 243px; }
+  .section--body__clients .row-container {
+    position: relative; }
+  .section--body__clients .row-overlay-1 {
+    background: linear-gradient(to right, #0b0b0b, rgba(255, 255, 255, 0));
+    height: 243px;
+    width: 4.16667%;
+    position: absolute;
+    left: 0;
+    z-index: 50; }
+  .section--body__clients .row-overlay-2 {
+    background: linear-gradient(to left, #0b0b0b, rgba(255, 255, 255, 0));
+    height: 243px;
+    width: 4.16667%;
+    position: absolute;
+    right: 0;
+    z-index: 50; }
+  .section--body__clients .row .slider-card {
+    z-index: 49; }
+  .section--body__clients .slider-card h4 {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .5;
+    transition: opacity .3s;
+    width: 150px;
+    height: 150px;
+    color: rgba(11, 11, 11, 0); }
+    @media (min-width: 31.25em) {
+      .section--body__clients .slider-card h4 {
+        width: 200px;
+        height: 200px; } }
+    .section--body__clients .slider-card h4:hover {
+      opacity: 1; }
+  .section--body__clients .slider-card--dirtdevil h4 {
+    background-image: url("../images/clients/dd-white.png"); }
+  .section--body__clients .slider-card--thechapel h4 {
+    background-image: url("../images/clients/chapel-white.png"); }
+  .section--body__clients .slider-card--shawnee-alliance h4 {
+    background-image: url("../images/clients/shawnee-alliance-white.png"); }
+  .section--body__clients .slider-card--gfo h4 {
+    background-image: url("../images/clients/gfo-white.png"); }
+  .section--body__clients .slider-card--hoover h4 {
+    background-image: url("../images/clients/hoover-white.png"); }
+  .section--body__clients .slider-card--oreck h4 {
+    background-image: url("../images/clients/oreck-white.png"); }
+  .section--body__clients .slider-card--tsc h4 {
+    background-image: url("../images/clients/tsc-white.png"); }
+  .section--body__clients .slider-card--wtlw h4 {
+    background-image: url("../images/clients/wtlw-white.png"); }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Services Section */
+.section--header__services {
+  background: url("../images/backgrounds/speaker-portrait.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  @media (min-width: 31.25em) {
+    .section--header__services {
+      background: url("../images/backgrounds/speaker-small.jpg") 75% 50% no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+  @media (min-width: 50em) {
+    .section--header__services {
+      background: url("../images/backgrounds/speaker.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 5px 5px rgba(37, 37, 37, 0.3);
+  font-size: 2rem;
+  line-height: 3rem; }
+  .card--title {
+    margin: 0;
+    height: 22rem;
+    padding-top: 11rem;
+    text-align: center;
+    position: relative;
+    background-color: #252525; }
+    .card--title__narration {
+      background: url("../images/backgrounds/bookshelf.jpg") center center no-repeat;
+      background-size: cover; }
+    .card--title__voiceovers {
+      background: url("../images/backgrounds/mic2.jpg") center center no-repeat;
+      background-size: cover; }
+    .card--title__studio {
+      background: url("../images/backgrounds/mixer.jpg") center center no-repeat;
+      background-size: cover; }
+    .card--title__inner {
+      background-color: rgba(255, 255, 255, 0.6);
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 3rem;
+      padding: 2.7rem 1rem;
+      transform: translateY(-50%); }
+  .card--description {
+    padding: 2.5rem 2.5rem 0; }
+  .card--list {
+    padding: 0 5rem 2.5rem;
+    list-style-position: outside; }
+    .card--list__item {
+      line-height: 2.5rem; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* About Section */
+.section--header__about {
+  background: url("../images/backgrounds/techbooth-portrait.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  @media (min-width: 31.25em) {
+    .section--header__about {
+      background: url("../images/backgrounds/techbooth-small.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+  @media (min-width: 100em) {
+    .section--header__about {
+      background: url("../images/backgrounds/techbooth-small.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+
+.section--body__about p {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 3.5rem; }
+  .section--body__about p + p {
+    margin-top: 3rem; }
+
+.section--body__about .column-3 {
+  border: 1px solid;
+  padding: 5rem; }
+
+.section--body__about .img-wrapper {
+  border: 1px solid;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color .3s;
+  max-width: 500px;
+  margin: 0 auto; }
+  @media (min-width: 75em) {
+    .section--body__about .img-wrapper {
+      max-width: none;
+      margin: inherit; } }
+  .section--body__about .img-wrapper:hover {
+    background-color: white; }
+  .section--body__about .img-wrapper img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    transition: filter .3s; }
+    .section--body__about .img-wrapper img:hover {
+      filter: grayscale(0); }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Contact Section */
+.section--header__contact {
+  background: url("../images/backgrounds/mic-grill-portrait.jpg") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+  @media (min-width: 31.25em) {
+    .section--header__contact {
+      background: url("../images/backgrounds/mic-grill.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+  @media (min-width: 100em) {
+    .section--header__contact {
+      background: url("../images/backgrounds/mic-grill.jpg") center center no-repeat;
+      background-attachment: fixed;
+      background-size: cover; } }
+
+.section--body__contact {
+  background-color: #252525; }
+  .section--body__contact .lead {
+    color: #ffffff; }
+
+.contact--other {
+  margin-top: 2.5rem; }
+  @media (min-width: 75em) {
+    .contact--other {
+      position: absolute;
+      right: 0;
+      margin-top: 0; } }
+  .contact--other__inner {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center; }
+  .contact--other__title {
+    margin: 0;
+    text-transform: uppercase;
+    padding: 2.5rem;
+    border-bottom: 1px solid;
+    font-size: 2.2rem; }
+    @media (min-width: 100em) {
+      .contact--other__title {
+        font-size: 3rem; } }
+  .contact--other__item {
+    border-bottom: 1px solid #ffffff;
+    position: relative; }
+    .contact--other__item__link {
+      display: block;
+      font-size: 2rem;
+      padding: 2.5rem;
+      color: #ffffff;
+      font-weight: 300; }
+      @media (min-width: 100em) {
+        .contact--other__item__link {
+          font-size: 2.5rem; } }
+      .contact--other__item__link:hover {
+        border: none;
+        color: #ffffff;
+        font-weight: bold; }
+    .contact--other__item__icon {
+      position: absolute;
+      left: 3rem;
+      top: 2.1rem;
+      display: block;
+      font-size: 3rem; }
+      @media (min-width: 100em) {
+        .contact--other__item__icon {
+          left: 4rem;
+          top: 2rem; } }
+      @media (min-width: 100em) {
+        .contact--other__item__icon {
+          font-size: 4rem; } }
+  .contact--other__twitter__link:hover {
+    background-color: #1da1f2; }
+  .contact--other__linkedin {
+    border-bottom: none; }
+    .contact--other__linkedin__link:hover {
+      background-color: #0077B5; }
+  .contact--other__phone__link:hover {
+    background-color: #e87a37; }
+
+.contact--form__input {
+  border: none;
+  background: rgba(230, 230, 230, 0.9);
+  padding: 1.25rem 2.5rem;
+  font-size: 2rem;
+  font-family: Lato, sans-serif;
+  color: #0b0b0b;
+  width: 100%; }
+  .contact--form__input:focus {
+    outline: none;
+    background: #ffffff;
+    color: #000;
+    border-left: .5rem solid green;
+    padding-left: 2rem; }
+  .contact--form__input:focus:invalid {
+    border-color: red; }
+
+.contact--form__textarea {
+  border: none;
+  background: rgba(230, 230, 230, 0.9);
+  padding: 1.25rem 2.5rem;
+  font-size: 2rem;
+  font-family: Lato, sans-serif;
+  color: #0b0b0b;
+  width: 100%; }
+  .contact--form__textarea:focus {
+    outline: none;
+    background: #ffffff !important;
+    color: #000;
+    border-left: .5rem solid green;
+    padding-left: 2rem; }
+  .contact--form__textarea:focus:invalid {
+    border-color: red; }
+
+.contact--form__submit {
+  border: 1px solid #ffffff;
+  background: none;
+  color: #ffffff;
+  font-family: lato, sans-serif;
+  text-transform: uppercase;
+  padding: 1.25rem 2.5rem;
+  width: 100%;
+  font-size: 2rem;
+  transition: background-color .3s, text-shadow .3s; }
+  .contact--form__submit:focus {
+    outline: none; }
+  .contact--form__submit:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    text-shadow: 0px 0px 4px #252525; }
+
+body {
+  position: relative; }
+
+/* exists to stop autocreation of css file */
+/* Footer Section */
+.footer {
+  padding: 4rem 8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  line-height: 2rem;
+  color: #e6e6e6;
+  background-color: #0b0b0b; }
+  .footer a:hover {
+    color: #ffffff; }
+
+@media (max-width: 1049px) {
+  .site-header {
+    overflow: visible;
+    padding: 0;
+    height: 10rem; }
+    .site-header .mini-identity {
+      height: 6rem;
+      margin-left: 3rem;
+      padding-left: 6rem; }
+      .site-header .mini-identity .title {
+        font-size: 3rem;
+        padding-top: .8rem; }
+      .site-header .mini-identity .subtitle {
+        padding-top: .5rem; }
+    .site-header .main-navigation {
+      position: fixed;
+      top: 10rem;
+      width: 100%;
+      background-color: #ffffff;
+      border-top: 1px solid #252525;
+      padding: 0;
+      text-align: center; }
+      .site-header .main-navigation .menu--item {
+        display: block;
+        padding: 0; }
+        .site-header .main-navigation .menu--item__link {
+          display: block;
+          padding: 2.5rem 0;
+          border-bottom: 1px solid #252525;
+          font-weight: 900; }
+          .site-header .main-navigation .menu--item__link:hover {
+            border-bottom: 1px solid #252525;
+            background-color: #252525;
+            color: #ffffff; }
+      .site-header .main-navigation.menu-hidden {
+        top: -40rem; }
+    .site-header .hamburger {
+      height: 5rem;
+      width: 5rem;
+      background: url("../images/hamburger.png") center center no-repeat;
+      margin-right: 3rem;
+      margin-top: 2.5rem;
+      cursor: pointer; }
+      .site-header .hamburger.clicked {
+        background: url("../images/hamburger-close.png") center center no-repeat; }
+  .site-header.navbar-hidden .main-navigation .menu--item__link {
+    color: #252525; }
+  .site-header.navbar-hidden .hamburger {
+    filter: invert(100%); }
+  .navbar-adjustment {
+    top: -10rem; } }
+
+/* Import Awesomesauce */

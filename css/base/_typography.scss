@@ -1,0 +1,27 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Sitewide Typography */
+
+html {
+  font-size: 50%;
+
+  @include respond(xlDesktop) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $off_white;
+}
+
+a {
+  color: $highlight;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 2px solid;
+    color: $off_black;
+  }
+}

@@ -1,0 +1,62 @@
+body { position: relative; } /* exists to stop autocreation of css file */
+
+/* Sitewide Variables */
+
+/* Colors */
+
+$white:          #ffffff;
+$off_white:      #e6e6e6;
+$black:          #0b0b0b;
+$off_black:      #252525;
+$highlight:      #e87a37;
+$twitter_blue:   #1da1f2;
+$linkedin_blue:  #0077B5;
+
+
+
+/* Grid */
+
+$grid_width:       1600px;
+$gutter_width:     2.5rem;
+
+
+/* Media Query Manager */
+
+/* --- Breakpoints ------------
+
+    phone:        000  -  499;
+      grid_width = 100%;
+
+    tPortrait:    500  -  799;
+      grid_width = 500px
+
+    tLandscape:   800  -  1199;
+      grid_width = 720px
+
+    sdDesktop:    1200 -  1599;
+      grid_width = 960px
+
+    hdDesktop:    1600 -  1999;
+      grid_width = 1440px
+
+    xlDesktop:    2000+
+
+------------------------------- */
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tPortrait {
+    @media (min-width: 31.25em) { @content };
+  }
+  @if $breakpoint == tLandscape {
+    @media (min-width: 50em) { @content };
+  }
+  @if $breakpoint == sdDesktop {
+    @media (min-width: 75em) { @content };
+  }
+  @if $breakpoint == hdDesktop {
+    @media (min-width: 100em) { @content };
+  }
+  @if $breakpoint == xlDesktop {
+    @media (min-width: 125em) { @content };
+  }
+}
